@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 
 function LoginForm(){
     const [username, setUsername] = useState("")
@@ -15,7 +15,7 @@ function LoginForm(){
 
     function handleDataSubmit(e) {
         e.preventDefault();
-        const newUser = { username: username, userColor: userColor };
+        //const newUser = { username: username, userColor: userColor };
         //FETCH existing UserData from Server
         //Iterate through fetched Data
         //If username exists, set it's data to invisible fields in MessageForm
