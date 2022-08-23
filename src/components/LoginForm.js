@@ -1,9 +1,8 @@
-import React, { useState } from "react";
+import React, { useHistory } from "react";
 
-function LoginForm(){
-    const [username, setUsername] = useState("")
-    const [userColor, setUserColor] = useState("")
-    // const [submittedData, setSubmittedData] = useState([])
+function LoginForm({username, setUsername, userColor, setUserColor}){
+    //define in APP.js pass to login and message
+    //const history = useHistory();
 
     function handleUsernameChange(e) {
         setUsername(e.target.value)
@@ -15,21 +14,19 @@ function LoginForm(){
 
     function handleDataSubmit(e) {
         e.preventDefault();
-        //const newUser = { username: username, userColor: userColor };
-        //FETCH existing UserData from Server
-        //Iterate through fetched Data
-        //If username exists, set it's data to invisible fields in MessageForm
-        //if username doesn't exist send newUser data to server and then do ^
+        console.log(document.querySelector("#username").value)
+        console.log(document.querySelector("#color").value)
         setUsername("")
-        setUserColor("")
     }
 
     return (
         <div>
             <form onSubmit={handleDataSubmit}>
-                <input type="text" onChange={handleUsernameChange} value = {username} />
-                <input type="text" onChange={handleColorChange} value = {userColor} />
-                <button type="submit">Login or Create User</button>
+                <p className="formText">Username:</p>
+                <input type="text" id="username" onChange={handleUsernameChange} value = {username} />
+                <p className="formText">User Color:</p>
+                <input type="color" id="color" onChange={handleColorChange} value = {userColor} />
+                <button type="submit" id="login-button">Login</button>
             </form>
         </div>
     )
