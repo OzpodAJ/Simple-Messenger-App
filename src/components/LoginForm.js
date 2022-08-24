@@ -12,8 +12,9 @@ function LoginForm({username, setUsername, userColor, setUserColor}){
         setUserColor(e.target.value)
     }
 
-    function handleDataSubmit(e) {
+    function handleLoginButton(e) {
         e.preventDefault();
+        //send user to /messageboard page
         console.log(document.querySelector("#username").value)
         console.log(document.querySelector("#color").value)
         setUsername("")
@@ -21,7 +22,7 @@ function LoginForm({username, setUsername, userColor, setUserColor}){
 
     return (
         <div>
-            <form onSubmit={handleDataSubmit}>
+            <form onSubmit={handleLoginButton}>
                 <p className="formText">Username:</p>
                 <input type="text" id="username" onChange={handleUsernameChange} value = {username} />
                 <p className="formText">User Color:</p>
