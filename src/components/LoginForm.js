@@ -1,8 +1,9 @@
-import React, { useHistory } from "react";
+import React from "react";
+import { useHistory } from "react-router-dom"
 
 function LoginForm({username, setUsername, userColor, setUserColor}){
     //define in APP.js pass to login and message
-    //const history = useHistory();
+    const history = useHistory();
 
     function handleUsernameChange(e) {
         setUsername(e.target.value)
@@ -17,7 +18,6 @@ function LoginForm({username, setUsername, userColor, setUserColor}){
         //send user to /messageboard page
         console.log(document.querySelector("#username").value)
         console.log(document.querySelector("#color").value)
-        setUsername("")
     }
 
     return (
@@ -27,7 +27,7 @@ function LoginForm({username, setUsername, userColor, setUserColor}){
                 <input type="text" id="username" onChange={handleUsernameChange} value = {username} />
                 <p className="formText">User Color:</p>
                 <input type="color" id="color" onChange={handleColorChange} value = {userColor} />
-                <button type="submit" id="login-button">Login</button>
+                <button type="submit" id="login-button" onClick={() => history.push("/messageboard")}>Login</button>
             </form>
         </div>
     )
