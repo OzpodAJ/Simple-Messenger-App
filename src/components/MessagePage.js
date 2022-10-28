@@ -10,7 +10,7 @@ function MessagePage({username, userColor}){
     const [timestamp, setTimestamp] = useState("null")
 
     useEffect(() => {
-        fetch("http://localhost:3000/users")
+        fetch("http://localhost:3000/posts")
             .then((r) => r.json())
             .then((mdata) => mdata.map((messageData) => {
                 setMessageId(messageData.id)
