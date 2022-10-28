@@ -3,7 +3,7 @@
       {
         "id": 1,
         "username": "JDoe1234",
-        "color": "color",
+        "color": "red",
         "comment": "This is my Comment",
         "timestamp": "1-21-2000"
       }
