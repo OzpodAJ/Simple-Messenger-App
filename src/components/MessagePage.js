@@ -10,14 +10,14 @@ function MessagePage({username, setUsername, userColor, setUserColor}){
     useEffect(() => {
         fetch("http://localhost:3000/users")
             .then((r) => r.json())
-            .then((mdata) => mdata.map(messageData => {
-                setUsername(messageData.username)
-                setUserColor(messageData.color)
-                setUserId(messageData.id)
-                setUserComment(messageData.comment)
-                setTimestamp(messageData.timestamp)
-            }))
-    })
+            .then((mdata) => {
+                setUserId(mdata.id)
+                setUserColor(mdata.color)
+                setUsername(mdata.username)
+                setTimestamp(mdata.timestamp)
+                setUserComment(mdata.comment)
+            })})
+
     return (
         <div>
             <div className = "messageBox">
