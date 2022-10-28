@@ -28,7 +28,7 @@ function MessagePage({username, userColor}){
                 <MessageCard
                     key = {messageId} 
                     username = {userId}
-                    color={idColor}
+                    messageColor={idColor}
                     timestamp={timestamp}
                     comment={userComment}/>
             </div>
