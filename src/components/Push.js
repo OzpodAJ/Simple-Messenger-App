@@ -11,3 +11,5 @@ function PushMessage(props){
     .then(res => res.json())
     .then(newPost => console.log(newPost))
 }
+
+export default PushMessage
