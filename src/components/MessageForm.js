@@ -1,7 +1,9 @@
 import React, { useState } from "react";
+import Timestamp from "./Timestamp";
 
 function MessageForm({username, userColor}){
     const [userMessage, setUserMessage] = useState("")
+    const [date, setDate] = useState(Date.now())
     const [messageData, setMessageData] = useState({
         username: "",
         usercolor: "",
@@ -24,7 +26,8 @@ function MessageForm({username, userColor}){
 
     return (
         <div>
-            <p>{username}</p> 
+            <p>{username}</p>
+            <Timestamp />
             <form onSubmit={handleSubmit}>
                 <input type="textarea" onChange={handleMessageChange} value={userMessage} />
                 <button type="submit">Send Message</button>
