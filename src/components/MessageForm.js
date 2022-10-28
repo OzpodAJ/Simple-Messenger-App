@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Timestamp from "./Timestamp";
+import PushMessage from "./Push";
 
 function MessageForm({username, userColor}){
     const [userMessage, setUserMessage] = useState("")
@@ -17,16 +18,16 @@ function MessageForm({username, userColor}){
         e.preventDefault();
         setMessageData({
             username: {username},
-            usercolor: {userColor},
-            messagetext: {userMessage}
+            color: {userColor},
+            message: {userMessage},
+            timestamp: {Timestamp},
         })
-        console.log(messageData)
+        console.log(messageData);
+        // PushMessage(messageData);
     }
 
     return (
         <div>
-            <p>{username}</p>
-            <Timestamp />
             <form onSubmit={handleSubmit}>
                 <input type="textarea" onChange={handleMessageChange} value={userMessage} />
                 <button type="submit">Send Message</button>
