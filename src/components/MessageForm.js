@@ -3,7 +3,6 @@ import Timestamp from "./Timestamp";
 
 function MessageForm({username, userColor}){
     const [userMessage, setUserMessage] = useState("")
-    const [date, setDate] = useState(Date.now())
     const [messageData, setMessageData] = useState({
         username: "",
         usercolor: "",
