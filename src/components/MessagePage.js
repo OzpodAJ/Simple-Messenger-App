@@ -2,32 +2,35 @@ import React, { useEffect, useState } from "react";
 import MessageForm from "./MessageForm"
 import MessageCard from "./MessageCard";
 
-function MessagePage({username, setUsername, userColor, setUserColor}){
-    const [userId, setUserId] = useState("")
+function MessagePage({username, userColor}){
+    const [messageId, setMessageId] = useState("0")
+    const [userId, setUserId] = useState("Phillip H. Lanier")
+    const [idColor, setIdColor] = useState("#6f456e")
     const [userComment, setUserComment] = useState("No Comment")
-    const [timestamp, setTimestamp] = useState("1-21-2000")
+    const [timestamp, setTimestamp] = useState("null")
 
     useEffect(() => {
         fetch("http://localhost:3000/users")
             .then((r) => r.json())
-            .then((mdata) => {
-                setUserId(mdata.id)
-                setUserColor(mdata.color)
-                setUsername(mdata.username)
-                setTimestamp(mdata.timestamp)
-                setUserComment(mdata.comment)
-            })})
+            .then((mdata) => mdata.map((messageData) => {
+                setMessageId(messageData.id)
+                setIdColor(messageData.color)
+                setUserId(messageData.username)
+                setTimestamp(messageData.timestamp)
+                setUserComment(messageData.comment)
+            }))
+            })
 
     return (
         <div>
             <div className = "messageBox">
                 <h1>Welcome to the Ozpod</h1>
                 <MessageCard
-                    key = {userId} 
-                    username = {username}
-                    color={userColor}
+                    key = {messageId} 
+                    username = {userId}
+                    color={idColor}
                     timestamp={timestamp}
-                    userComment={userComment}/>
+                    comment={userComment}/>
             </div>
             <MessageForm 
                 username = {username}
