@@ -17,7 +17,7 @@ function MessagePage({username, userColor}){
                 setIdColor(messageData.color)
                 setUserId(messageData.username)
                 setTimestamp(messageData.timestamp)
-                setUserComment(messageData.comment)
+                setUserComment(messageData.message)
             }))
             })
 
@@ -30,7 +30,7 @@ function MessagePage({username, userColor}){
                     username = {userId}
                     messageColor={idColor}
                     timestamp={timestamp}
-                    comment={userComment}/>
+                    message={userComment}/>
             </div>
             <MessageForm 
                 username = {username}
