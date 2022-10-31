@@ -4,12 +4,7 @@ import MessageCard from "./MessageCard"
 function Messages(){    
     return (
     <div>
-       { arr.map((a) => {<MessageCard
-            key = {a.id} 
-            username = {a.username}
-            messageColor={a.color}
-            timestamp={a.timestamp}
-            message={a.comment}/>})}
+       <p>Placeholder</p>
     </div>)   
 }
 

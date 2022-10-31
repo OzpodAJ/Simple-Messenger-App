@@ -8,17 +8,15 @@ import About from "./About";
 function App() {
     const [username, setUsername] = useState("")
     const [userColor, setUserColor] = useState("#ff0000")
-    const [mesArr, setMesArr] = useState([])
-    useEffect(() => {
-        fetch("http://localhost:3000/posts")
-            .then((r) => r.json())
-            .then((mdata) => setMesArr([...mdata]))
-            // .then((mdata) => setMesArr([...mdata]))
-            }, [])
-    console.log(mesArr)
-    // let arr
-    // arr = [...mesArr]
-    // console.log(arr)
+    // const [mesArr, setMesArr] = useState([])
+    // useEffect(() => {
+    //     fetch("http://localhost:3000/posts")
+    //         .then((r) => r.json())
+    //         .then((mdata) => setMesArr([...mdata]))
+    //         // .then((mdata) => setMesArr([...mdata]))
+    //         }, [])
+    // console.log(mesArr)
+
   return (
     <div>
       <NavBar />

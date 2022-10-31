@@ -18,6 +18,7 @@ function LoginForm({username, setUsername, userColor, setUserColor}){
         //send user to /messageboard page
         console.log(document.querySelector("#username").value)
         console.log(document.querySelector("#color").value)
+        history.push("/messageboard")
     }
 
     return (
@@ -27,7 +28,7 @@ function LoginForm({username, setUsername, userColor, setUserColor}){
                 <input type="text" id="username" onChange={handleUsernameChange} value = {username} />
                 <p className="formText">User Color:</p>
                 <input type="color" id="color" onChange={handleColorChange} value = {userColor} />
-                <button type="submit" id="login-button" onClick={() => history.push("/messageboard")}>Login</button>
+                <button type="submit" id="login-button" onClick={handleLoginButton}>Login</button>
             </form>
         </div>
     )
