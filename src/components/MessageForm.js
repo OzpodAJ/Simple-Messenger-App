@@ -9,23 +9,23 @@ function MessageForm({username, userColor}){
 
     function handleMessageChange(e){
         setUserMessage(e.target.value)
-    }
-
-    function handleSubmit(e) {
-        e.preventDefault();
         const date = new Date().toLocaleDateString("en-GB", {
             day: "numeric",
             month: "short",
             year: "numeric",
         })
         setMessageData({
-            "username": {username},
-            "color": {userColor},
-            "message": {userMessage},
-            "timeStamp": {date}
+            username: {username},
+            color: {userColor},
+            message: {userMessage},
+            timeStamp: {date}
         });
+    }
+
+    function handleSubmit(e) {
+        e.preventDefault();
         console.log(messageData);
-        // PushMessage(messageData);
+        PushMessage(messageData);
     }
 
     return (
