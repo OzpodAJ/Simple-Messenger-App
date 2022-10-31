@@ -13,36 +13,6 @@
       "color": "#6f456e",
       "message": "This is my second message",
       "timestamp": "21 Jan 2022"
-    },
-    {
-      "username": {
-        "username": "Zorcoz"
-      },
-      "color": {
-        "userColor": "#1e7db8"
-      },
-      "message": {
-        "userMessage": "This is a test message."
-      },
-      "timeStamp": {
-        "date": "31 Oct 2022"
-      },
-      "id": 3
-    },
-    {
-      "username": {
-        "username": "Zorcoz"
-      },
-      "color": {
-        "userColor": "#1e7db8"
-      },
-      "message": {
-        "userMessage": "This is the second test message "
-      },
-      "timeStamp": {
-        "date": "31 Oct 2022"
-      },
-      "id": 4
     }
   ]
 }
