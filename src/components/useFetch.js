@@ -8,6 +8,8 @@ function useFetch(){
             .then((mdata) => setMesArr([...mdata]))
             // .then((mdata) => setMesArr([...mdata]))
             }, [])
+    
+    return { mesArr }
 }
 
 export default useFetch;

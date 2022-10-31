@@ -2,13 +2,16 @@ import React, {useState, useEffect} from "react";
 
 function Timestamp() {
     const [dateState, setDateState] = useState(new Date());
+    // function clickEvent(e){
+    //     console.log(e.target)
+    //   }
     useEffect(() => {
         setInterval(() => setDateState(new Date()), 30000);
     }, [])
 
     return (
         <div className="Clock">
-            <p>
+            <p className="timestamp">
                 {' '}
                 {dateState.toLocaleDateString("en-GB", {
                     day: "numeric",
