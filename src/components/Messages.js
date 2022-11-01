@@ -3,12 +3,21 @@ import MessageCard from "./MessageCard"
 
 function Messages(){
     const [mesArr, setMesArr] = useState([])
-    useEffect(() => {
+
+    function fetchData() {
         fetch("http://localhost:3000/posts")
             .then((r) => r.json())
             .then((mdata) => setMesArr([...mdata]))
+    }
+    
+    useEffect(() => {
+        fetchData()
+            const interval = setInterval(() => {
+                fetchData()
+                }, 5000)
+                return() => clearInterval(interval)
             // .then((mdata) => setMesArr([...mdata]))
-            }, [])
+        }, [])
     const posts = mesArr.map(message => {
         return (
             <MessageCard
@@ -19,7 +28,6 @@ function Messages(){
                 message = {message.message} />
         )
     })
-    console.log(posts)  
     return (
     <div>
        {posts}
