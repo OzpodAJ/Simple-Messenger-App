@@ -1,0 +1,19 @@
+.messageBox {
+    background-color: #ffffbf;
+    border-radius: 15px;
+    align-self: cente;
+    margin: auto;
+    padding: 50px;
+    width: 50%;
+    height: 400px;
+    overflow: scroll;
+}
+.messageCard {
+    align-content: center;
+    width: fit-content;
+    overflow-wrap: break-word;
+    border-radius: 25px;
+    padding: 20px;
+    color: black;
+    background-color: #d3d3d3;
+}
