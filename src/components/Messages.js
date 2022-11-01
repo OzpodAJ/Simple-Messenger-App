@@ -1,24 +1,9 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import MessageCard from "./MessageCard"
 
-function Messages(){
-    const [mesArr, setMesArr] = useState([])
+function Messages(props){
 
-    function fetchData() {
-        fetch("http://localhost:3000/posts")
-            .then((r) => r.json())
-            .then((mdata) => setMesArr([...mdata]))
-    }
-    
-    useEffect(() => {
-        fetchData()
-            const interval = setInterval(() => {
-                fetchData()
-                }, 5000)
-                return() => clearInterval(interval)
-            // .then((mdata) => setMesArr([...mdata]))
-        }, [])
-    const posts = mesArr.map(message => {
+    const posts = props.mesArr.map(message => {
         return (
             <MessageCard
                 key = {message.id}

@@ -1,6 +1,14 @@
 body {
     background-color: #093E55;
 }
+#navBar {
+    text-align: center;
+    color: whitesmoke;
+}
+#Page-Topper {
+    text-align: center;
+    color: whitesmoke;
+}
 .messageBox {
     background-image: url(background-sea-water.jpg);
     border-radius: 15px;
@@ -8,11 +16,11 @@ body {
     margin: auto;
     padding: 50px;
     width: 50%;
-    height: 400px;
+    height: 560px;
     overflow: scroll;
 }
 .messageCard {
-    align-content: center;
+    position: relative;
     width: 225px;
     height: fit-content;
     overflow-wrap: normal;
@@ -31,6 +39,17 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
 }
-#Page-Topper {
-    text-align: center;
+#textBox {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    padding: 10px;
+    border-radius: 15px;
 }
+#messageSubmit {
+    position: relative;
+    right: -1285px;
+    top: 3px;
+}
+

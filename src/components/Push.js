@@ -1,6 +1,7 @@
 import React from "react";
 
-function PushMessage(props){
+function PushMessage(props, mesArr, setMesArr){
+    console.log(props)
     fetch('http://localhost:3000/posts', {
         method: 'POST',
         headers: {
@@ -9,7 +10,7 @@ function PushMessage(props){
         body:JSON.stringify(props),
     })
     .then(res => res.json())
-    .then(newPost => console.log(newPost))
+    .then(newPost => console.log(newPost, mesArr))
 }
 
 export default PushMessage

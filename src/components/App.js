@@ -6,7 +6,7 @@ import MessagePage from "./MessagePage"
 import About from "./About";
 
 function App() {
-    const [username, setUsername] = useState("")
+    const [username, setUsername] = useState("Anonymous")
     const [userColor, setUserColor] = useState("#ff0000")
 
   return (

@@ -1,38 +1,42 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Timestamp from "./Timestamp"
 
 const linkStyles = {
+    textAlign: "center",
     display: "inline-block",
-    width: "60px",
+    width: "fit-content",
+    borderRadius: "15px",
     padding: "12px",
     margin: "0px 6px 6px",
-    background: "purple",
+    background: "#4DE71D",
     textDecoration: "none",
     color: "white",
 };
 
 function NavBar(){
     return (
-        <div>
+        <div id="navBar">
+            <Timestamp />
             <NavLink 
                 to = "/"
                 exact
                 style = {linkStyles}
-                activeStyle = {{background: "#301934"}}
+                activeStyle = {{background: "#379C18"}}
             > 
                 Login </NavLink>
             <NavLink 
                 to = "/messageboard"
                 exact
                 style = {linkStyles}
-                activeStyle = {{background: "#301934"}}
+                activeStyle = {{background: "#379C18"}}
             >
                  Messenger</NavLink>
             <NavLink 
                 to = "/about"
                 exact
                 style = {linkStyles}
-                activeStyle = {{background: "#301934"}}
+                activeStyle = {{background: "#379C18"}}
             >
                 About</NavLink>
         </div>

@@ -27,6 +27,20 @@
       "message": "And this is the fourth message",
       "timestamp": "1 Nov 2022",
       "id": 4
+    },
+    {
+      "username": "Anonymous",
+      "color": "#ff0000",
+      "message": "When I was, a young boy, my father, took me into the city, to see a marching band",
+      "timestamp": "1 Nov 2022",
+      "id": 5
+    },
+    {
+      "username": "Doof",
+      "color": "#d574e2",
+      "message": "My name is Doof and you'll do what I say.",
+      "timestamp": "1 Nov 2022",
+      "id": 6
     }
   ]
 }
