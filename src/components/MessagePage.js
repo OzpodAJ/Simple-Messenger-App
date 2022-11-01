@@ -5,7 +5,7 @@ import Messages from "./Messages"
 function MessagePage({username, userColor}){
     return (
         <div>
-            <h1>Welcome to the Ozpod</h1>
+            <h1 id="Page-Topper">Welcome to the Ozpod</h1>
             <div className = "messageBox">
                 <Messages />
 

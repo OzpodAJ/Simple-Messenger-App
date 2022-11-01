@@ -4,14 +4,14 @@
       "id": 1,
       "username": "JDoe1234",
       "color": "red",
-      "message": "This is my Message",
+      "message": "This is the first message",
       "timestamp": "21 Jan 2000"
     },
     {
       "id": 2,
-      "username": "JDoe1234",
+      "username": "JDoe5678",
       "color": "#6f456e",
-      "message": "This is my second message",
+      "message": "This is the second message",
       "timestamp": "21 Jan 2022"
     },
     {

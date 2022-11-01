@@ -22,6 +22,7 @@ function Messages(){
         return (
             <MessageCard
                 key = {message.id}
+                id = {message.id}
                 username = {message.username}
                 messageColor = {message.color}
                 timestamp = {message.timestamp}
