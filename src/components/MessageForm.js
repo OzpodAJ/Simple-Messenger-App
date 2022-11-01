@@ -6,7 +6,7 @@ function MessageForm({username, userColor}){
     const [messageData, setMessageData] = useState({});
 
     function handleMessageChange(e){
-        setUserMessage(e.target.value)
+        setUserMessage(e.target.value, " ")
         const date = new Date().toLocaleDateString("en-GB", {
             day: "numeric",
             month: "short",
@@ -22,7 +22,6 @@ function MessageForm({username, userColor}){
 
     function handleSubmit(e) {
         e.preventDefault();
-        console.log(messageData);
         PushMessage(messageData);
         setUserMessage("");
     }
