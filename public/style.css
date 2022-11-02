@@ -60,6 +60,16 @@ body {
 #login-button:hover {
     background-color: #379C18;
 }
+#about-section {
+    text-align: center;
+    color: whitesmoke;
+    border-radius: 15px;
+    align-self: center;
+    margin: auto;
+    padding: 50px;
+    width: 50%;
+    height: 560px;
+}
 .messageBox {
     background-image: url(background-sea-water.jpg);
     border-radius: 15px;
