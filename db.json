@@ -41,6 +41,20 @@
       "message": "My name is Doof and you'll do what I say.",
       "timestamp": "1 Nov 2022",
       "id": 6
+    },
+    {
+      "username": "GoldenEye",
+      "color": "#d4af37",
+      "message": "Perhaps we may come to an arrangement, Agent Bond?",
+      "timestamp": "1 Nov 2022",
+      "id": 7
+    },
+    {
+      "username": "007",
+      "color": "#000000",
+      "message": "No can do GoldenEye, your plot for dominance over the world's supply of Vic's Vapo Rub ends now.",
+      "timestamp": "1 Nov 2022",
+      "id": 8
     }
   ]
 }

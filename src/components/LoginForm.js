@@ -22,11 +22,11 @@ function LoginForm({username, setUsername, userColor, setUserColor}){
     }
 
     return (
-        <div>
+        <div id="loginFormDiv">
             <form onSubmit={handleLoginButton}>
-                <p className="formText">Username:</p>
+                <h3 className="formText">Create a Username:</h3>
                 <input type="text" id="username" onChange={handleUsernameChange} value = {username} />
-                <p className="formText">User Color:</p>
+                <h3 className="formText">Choose a Username Color:</h3>
                 <input type="color" id="color" onChange={handleColorChange} value = {userColor} />
                 <button type="submit" id="login-button" onClick={handleLoginButton}>Login</button>
             </form>

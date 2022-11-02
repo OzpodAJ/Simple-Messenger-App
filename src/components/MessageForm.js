@@ -1,8 +1,10 @@
 import React, { useState } from "react";
+import { useHistory } from "react-router-dom"
 import PushMessage from "./Push";
 
 function MessageForm({username, userColor, mesArr, setMesArr}){
-    const [messageData, setMessageData] = useState({message: ""});
+    const [messageData, setMessageData] = useState({message: ""})
+    const history = useHistory();
 
     function handleMessageChange(e){
         const date = new Date().toLocaleDateString("en-GB", {
@@ -19,7 +21,7 @@ function MessageForm({username, userColor, mesArr, setMesArr}){
     }
     function handleSubmit(e) {
         e.preventDefault();
-        PushMessage(messageData, mesArr, setMesArr);
+        PushMessage(messageData, mesArr);
         setMesArr([...mesArr, messageData])
     }
 
@@ -28,6 +30,7 @@ function MessageForm({username, userColor, mesArr, setMesArr}){
             <form onSubmit={handleSubmit}>
                 <input type="textarea" id="textBox" onInput={handleMessageChange} value={messageData.message}/>
                 <button type="submit" id="messageSubmit" onClick={handleSubmit}>Send Message</button>
+                <button type="button" id="logoutButton" onClick={() => history.push("/home")}>Logout</button>
             </form>
         </div>
     )

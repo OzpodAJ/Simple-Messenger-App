@@ -1,6 +1,4 @@
-import React from "react";
-
-function PushMessage(props, mesArr, setMesArr){
+function PushMessage(props, mesArr){
     console.log(props)
     fetch('http://localhost:3000/posts', {
         method: 'POST',

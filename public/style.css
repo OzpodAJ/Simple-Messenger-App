@@ -9,6 +9,57 @@ body {
     text-align: center;
     color: whitesmoke;
 }
+#loginWelcome {
+    margin-top: 5%;
+    text-align: center;
+    color: whitesmoke;
+}
+#loginFormDiv {
+    text-align: center;
+    background-color: white;
+    border-radius: 15px;
+    align-self: center;
+    margin: auto;
+    padding: 15px;
+    width: 22%;
+    height: 22%;
+}
+.formText {
+    font-family: sans-serif;
+}
+#username {
+    text-align: center;
+    font-family: 'Times New Roman';
+    font-size: large;
+    border-radius: 20px;
+    height: 20px;
+}
+#color {
+    position: relative;
+    align-self: center;
+    background-color: grey;
+    width: 15%;
+    border-radius: 15px;
+}
+#color:hover {
+    background-color: black;
+}
+#login-button {
+    position: absolute;
+    width: 12%;
+    right: 44%;
+    bottom: 50%;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 15px;
+    font-family: 'Times New Roman';
+    font-size: medium;
+    color: whitesmoke;
+    background-color: #4DE71D;
+}
+#login-button:hover {
+    background-color: #379C18;
+}
 .messageBox {
     background-image: url(background-sea-water.jpg);
     border-radius: 15px;
@@ -19,21 +70,38 @@ body {
     height: 560px;
     overflow: scroll;
 }
-.messageCard {
-    position: relative;
-    width: 225px;
+.messageCard:nth-child(odd){
+    width: 68%;
+    height: fit-content;
+    overflow-wrap: normal;
+    border-radius: 25px;
+    padding: 12px;
+    color: whitesmoke;
+    background-color: black;
+    margin-left: 16%;
+}
+.messageCard:nth-child(even){
+    width: 68%;
     height: fit-content;
     overflow-wrap: normal;
     border-radius: 25px;
     padding: 12px;
     color: black;
     background-color: #f8f6f5;
+    margin-left: 16%;
 }
-.messageCard:nth-child(odd){
-    float: left;
+.username {
+    text-align: center;
+    margin-top: -1%;
+    margin-right: 18%;
 }
-.messageCard:nth-child(even){
-    float: right;
+.time {
+    text-align: center;
+    margin-top: -6%;
+    margin-right: -18%;
+}
+.message {
+    text-align: center;
 }
 .messageCard + .messageCard {
     margin-top: 50px;
@@ -48,8 +116,27 @@ body {
     border-radius: 15px;
 }
 #messageSubmit {
-    position: relative;
-    right: -1285px;
-    top: 3px;
+    position: absolute;
+    right: 25%;
+    bottom: 7.5%;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #4DE71D;
+}
+#messageSubmit:hover {
+    background-color: #379C18;
+}
+#logoutButton {
+    position: absolute;
+    left: 25%;
+    bottom: 7.5%;
+    display: inline-block;
+    padding: 12px;
+    border-radius: 15px;
+    background-color: #4DE71D;
+}
+#logoutButton:hover {
+    background-color: #379C18;
 }
 

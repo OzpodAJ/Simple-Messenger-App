@@ -19,7 +19,7 @@ function NavBar(){
         <div id="navBar">
             <Timestamp />
             <NavLink 
-                to = "/"
+                to = "/home"
                 exact
                 style = {linkStyles}
                 activeStyle = {{background: "#379C18"}}
