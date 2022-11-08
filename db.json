@@ -55,6 +55,20 @@
       "message": "No can do GoldenEye, your plot for dominance over the world's supply of Vic's Vapo Rub ends now.",
       "timestamp": "1 Nov 2022",
       "id": 8
+    },
+    {
+      "username": "Zorcoz",
+      "color": "#3fff0a",
+      "message": "Hello Everyone!",
+      "timestamp": "1 Nov 2022",
+      "id": 9
+    },
+    {
+      "username": "Zorcoz",
+      "color": "#9d1bda",
+      "message": "This is pretty cool.",
+      "timestamp": "1 Nov 2022",
+      "id": 10
     }
   ]
 }
