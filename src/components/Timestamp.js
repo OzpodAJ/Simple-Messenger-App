@@ -6,7 +6,8 @@ function Timestamp() {
     //     console.log(e.target)
     //   }
     useEffect(() => {
-        setInterval(() => setDateState(new Date()), 30000);
+        const interval = setInterval(() => setDateState(new Date()), 30000)
+        return() => clearInterval(interval);
     }, [])
 
     return (

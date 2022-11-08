@@ -69,6 +69,27 @@
       "message": "This is pretty cool.",
       "timestamp": "1 Nov 2022",
       "id": 10
+    },
+    {
+      "username": "AndrewO",
+      "color": "#1ddae7",
+      "message": "Hello!",
+      "timestamp": "8 Nov 2022",
+      "id": 11
+    },
+    {
+      "username": "Andrew",
+      "color": "#ff0000",
+      "message": "Carl",
+      "timestamp": "8 Nov 2022",
+      "id": 12
+    },
+    {
+      "username": "Anonymous",
+      "color": "#ff0000",
+      "message": "New Message",
+      "timestamp": "8 Nov 2022",
+      "id": 13
     }
   ]
 }
