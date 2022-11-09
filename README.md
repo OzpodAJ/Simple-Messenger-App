@@ -18,13 +18,13 @@ Once node is installed, you can fork this repository so that you have your own c
 
 With the project cloned navigate to the file location in your CLI 
 
-<sub>At this point I reccomend grabbing the working directory <sup>pwd</sup> so you can navigate back to the file easily if it's needed.</sub>
+<sub>At this point I reccomend grabbing the working directory <sup>pwd</sup> so you can navigate back to the file easily when it's needed.</sub>
 
 In the file location now you need to start the DB.json Server so that the app has somewhere to fetch data from.
 ```
 json-server --watch db.json
 ```
-With the Json Server running, next you need to open another CLI <sub>This is where the working directory grabbed earlier can come in handy</sub> and navigate back to the file to start the app itself:
+With the Json Server running, next you need to open another CLI <sub>This is where the working directory grabbed earlier can come in handy</sub>  and navigate back to the file to start the app itself:
 ```
 npm start
 ```
