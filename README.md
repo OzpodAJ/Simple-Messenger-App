@@ -30,8 +30,8 @@ npm start
 ```
 
 From here the app is working, however, as it is running off a localhost only you or people with access to your computer can use it. In order for multiple people to be able to access the webpage you can either replace or host the db.json **_or_** utilize on of these resources:
-[ngrok](https://ngrok.com/)
-[localtunnel](https://theboroer.github.io/localtunnel-www/)
-[localhost](http://localhost.run/)
+ - [ngrok](https://ngrok.com/)
+ - [localtunnel](https://theboroer.github.io/localtunnel-www/)
+ - [localhost](http://localhost.run/)
 
 And that's it. You should now be able to have a simple chat with however many people have access to the app. Happy Chatting!
