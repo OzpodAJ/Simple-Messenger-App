@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { useHistory } from "react-router-dom"
-import PushMessage from "./Push";
 
 function MessageForm({username, userColor, mesArr, setMesArr}){
     const [messageData, setMessageData] = useState()
@@ -20,7 +19,7 @@ function MessageForm({username, userColor, mesArr, setMesArr}){
         const newMessageData = {
             username: (username),
             color: (userColor),
-            message: message,
+            message: (messageData),
             timestamp: (date)
         }
         fetch('http://localhost:3000/posts', {
@@ -39,7 +38,7 @@ function MessageForm({username, userColor, mesArr, setMesArr}){
     return (
         <div>
             <form onSubmit={handleSubmit}>
-                <input type="textarea" id="textBox" onInput={handleMessageChange} value={messageData.message}/>
+                <input type="textarea" id="textBox" onInput={handleMessageChange} value={messageData}/>
                 <button type="submit" id="messageSubmit" onClick={handleSubmit} >Send Message</button>
                 <button type="button" id="logoutButton" onClick={() => history.push("/home")}>Logout</button>
             </form>
